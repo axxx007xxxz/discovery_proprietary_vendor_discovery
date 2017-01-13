@@ -187,9 +187,12 @@ PRODUCT_PACKAGES += \
 	LiveWallpapersPicker
 
 # Include OMS (Substratum)
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.substratum.verified=true
+
+# Build Masquerade (Substratum)
 PRODUCT_PACKAGES += \
     masquerade
-
 
 # Jack server heap size
 export ANDROID_JACK_VM_ARGS += "-Xmx4096m"
