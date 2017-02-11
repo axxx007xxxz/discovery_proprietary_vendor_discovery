@@ -1,3 +1,20 @@
+#ROM VERSION INFO
+
+ROM_BUILDTYPE := RC1
+
+ROM_VERSION := D1
+
+PRODUCT_DEVICE := $(TARGET_VENDOR_DEVICE_NAME)
+
+DISCOVERY_VERSION := $(ROM_VERSION)
+
+# Apply it to build.prop
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.discovery.version=$(ROM_VERSION) \
+    ro.modversion=$(ROM_BUILDTYPE) \
+    ro.discovery.date=$(shell date -u +%Y-%m-%d)
+
+
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
 PRODUCT_PROPERTY_OVERRIDES += \
