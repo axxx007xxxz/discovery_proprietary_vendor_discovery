@@ -46,7 +46,7 @@ PRODUCT_COPY_FILES += \
     vendor/discovery/prebuilt/common/media/bootanimation-480p.zip:system/media/bootanimation.zip
 else
 PRODUCT_COPY_FILES += \
-    vendor/discovery/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
+    vendor/discovery/prebuilt/common/media/bootanimation-x800.zip:system/media/bootanimation.zip
 endif
 
 # Backup Tool
