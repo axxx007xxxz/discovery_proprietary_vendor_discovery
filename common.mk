@@ -185,3 +185,6 @@ PRODUCT_PACKAGES += \
 	messaging \
 	LiveWallpapers \
 	LiveWallpapersPicker
+
+# Jack server heap size
+export ANDROID_JACK_VM_ARGS += "-Xmx4096m"
