@@ -190,9 +190,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.substratum.verified=true
 
-# Build Masquerade (Substratum)
+# Build Masquerade from sources and Substratum app from prebuilt
 PRODUCT_PACKAGES += \
-    masquerade
+    masquerade \
+    Substratum
 
 # Jack server heap size
 export ANDROID_JACK_VM_ARGS += "-Xmx4096m"
