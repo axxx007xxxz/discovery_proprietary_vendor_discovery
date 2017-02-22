@@ -194,6 +194,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     masquerade \
     Substratum
-
-# Jack server heap size
-export ANDROID_JACK_VM_ARGS += "-Xmx4096m"
